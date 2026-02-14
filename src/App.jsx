@@ -9,7 +9,7 @@ function App() {
   const [bgColor, setBgColor] = useState("#ff83bf");
   const handleYesClick = () => {
     setShowLovePage(true);
-    setBgColor("#f5dcdf");
+    setBgColor("#ebbfbf");
   };
 
   return (
