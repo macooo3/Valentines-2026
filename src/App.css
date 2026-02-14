@@ -1,12 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Playwrite+NZ+Basic:wght@100..400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=Yellowtail&display=swap");
 
-body {
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+}
+
+.app {
   display: flex;
   margin: 0;
   background-color: #ff83bf;
-  padding: 0 0 500px;
   height: 100vh;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -22,8 +32,8 @@ body {
   font-family: "Playwrite NZ Basic", cursive;
   margin: 20px;
   margin-bottom: 100px;
-  text-decoration: underline ;
-  text-underline-offset: 8px
+  text-decoration: underline;
+  text-underline-offset: 8px;
 }
 
 /* From Uiverse.io by KlaujonRuamni */
@@ -54,7 +64,7 @@ body {
   /* Smooth transition */
   margin: 60px;
   margin-top: 0;
-  width:auto;
+  width: auto;
   max-width: 100px;
 }
 
@@ -95,4 +105,36 @@ body {
   100% {
     background-position: right bottom;
   }
+}
+
+.outer-frame {
+  background-image: url("assets/v26/white-wood-surface-table-texture-clean-wooden-panel_118047-4919.avif");
+  background-size: cover; /* fills entire div */
+  background-position: center; /* keeps it centered */
+  background-repeat: no-repeat;
+  border-radius: 14px;
+  box-shadow: 0px 8px 40px 8px #00000080;
+
+  height: 800px;
+  width: 650px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0;
+}
+
+.inner-frame {
+  background-image: url("assets/v26/paperboard-texture.jpg");
+  background-size: cover; /* fills entire div */
+  background-position: center; /* keeps it centered */
+  background-repeat: no-repeat;
+  height: 750px;
+  width: 600px;
+  border-radius: 14px;
+  opacity: 80%;
+}
+.happy {
+  font-family: "Yellowtail", cursive;
+  font-size: 40px;
+  color: #d488da;
 }
