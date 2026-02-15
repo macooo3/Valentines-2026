@@ -57,7 +57,28 @@ function LovePage() {
         <h1 className="happy">Happy Valentine's Day! ❤️</h1>
         <div className="outer-frame">
           <div className="inner-frame">
-            <img className="red-grid-corner" src="src\assets\v26-stickers\red-grid-corner.png"></img>
+            <img
+              className="red-grid-corner"
+              src="src\assets\v26-stickers\red-grid-corner.png"
+            ></img>
+            <img
+              className="love-corner"
+              src="src\assets\v26-stickers\love-corner.png"
+            ></img>
+            <div className="love-letter"></div>
+            <img
+              className="monkey"
+              src="src\assets\v26-stickers\monke-flw.png"
+            ></img>
+            <img
+              className="snoopy-flw"
+              src="src\assets\v26-stickers\snoopy-flw.png"
+            ></img>
+            <div className="photo-card2"></div>
+            <div className="photo-card"></div>
+            <div className="photo-heart">
+              <img className="img1"></img>
+            </div>
           </div>
         </div>
       </div>

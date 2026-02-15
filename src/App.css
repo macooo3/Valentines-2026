@@ -6,12 +6,13 @@
   box-sizing: border-box;
 }
 
-html, body, #root {
+html,
+body,
+#root {
   height: 100vh;
   margin: 0;
-  overflow: hidden; 
+  overflow: hidden;
 }
-
 
 .app {
   display: flex;
@@ -117,7 +118,6 @@ html, body, #root {
   height: 100%;
 }
 
-
 /* ===================== */
 /* DARK OVERLAY */
 /* ===================== */
@@ -138,9 +138,9 @@ html, body, #root {
 /* CONTENT */
 /* ===================== */
 .content {
-margin-top: 30px;
+  margin-top: 40px;
   position: absolute;
-  top: 50%; 
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 20;
@@ -160,14 +160,13 @@ margin-top: 30px;
 /* ===================== */
 .lights {
   position: absolute; /* attach to outer-frame */
-  top: 0;             /* start at top of outer-frame */
+  top: 0; /* start at top of outer-frame */
   width: 100%;
   display: flex;
   justify-content: space-evenly;
   align-items: flex-start;
   padding-top: 10px; /* tiny gap so bulbs don’t overlap wire */
   z-index: 15;
-  
 }
 .wire {
   position: absolute;
@@ -176,7 +175,6 @@ margin-top: 30px;
   height: 3px;
   background: #111;
 }
-
 
 .light-wrapper {
   display: flex;
@@ -308,16 +306,15 @@ margin-top: 30px;
   box-shadow: 0px 8px 40px 8px #00000080;
 
   /* New sizing */
-  height: 70vh;          /* outer frame takes 80% of viewport height */
-  width: 50vw;           /* width fits 90% of viewport width */
-  max-width: 450px;      /* optional cap */
-  
+  height: 70vh; /* outer frame takes 80% of viewport height */
+  width: 50vw; /* width fits 90% of viewport width */
+  max-width: 450px; /* optional cap */
+
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 auto;        /* center horizontally */
-  position: relative;     /* so lights can attach */
- 
+  margin: 0 auto; /* center horizontally */
+  position: relative; /* so lights can attach */
 }
 
 .inner-frame {
@@ -327,33 +324,106 @@ margin-top: 30px;
   background-repeat: no-repeat;
 
   /* Scale relative to outer-frame */
-  height: 90%;   /* 90% of outer-frame height */
-  width: 90%;    /* 90% of outer-frame width */
+  height: 90%; /* 90% of outer-frame height */
+  width: 90%; /* 90% of outer-frame width */
 
   opacity: 0.8;
 
   position: relative;
- 
 }
 
 .happy {
   font-family: "Yellowtail", cursive;
   font-size: 30px;
   color: #d488da;
-  margin-bottom: 0;
+  margin-bottom: 8px;
 }
 
 /* ===================== */
 /* Inside Frame */
 /* ===================== */
 
-.red-grid-corner{
+.red-grid-corner {
   background-size: contain;
   background-repeat: no-repeat;
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
   position: absolute;
   top: 0;
   right: 0;
   rotate: 180deg;
+}
+
+.love-corner {
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.love-letter {
+  background-image: url("src/assets/v26-stickers/love-letter.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100px;
+  height: 100px;
+  top: 20%;
+  left: 20%;
+  position: absolute;
+}
+
+.monkey {
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 15%;
+  height: 15%;
+  top: 50%;
+  left: 20%;
+  position: absolute;
+}
+
+.snoopy-flw {
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 15%;
+  height: 15%;
+  top: 50%;
+  right: 20%;
+  position: absolute;
+}
+
+.photo-heart {
+  background-image: url("src/assets/v26-stickers/heart-photoCard.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 35%;
+  height: 80vh;
+  position: absolute;
+  top: 55%;
+  right: 3%;
+}
+
+.photo-card {
+  background-image: url("src/assets/v26-stickers/photo-card.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 35%;
+  height: 80vh;
+  position: absolute;
+  top: 30%;
+  left: 30%;
+}
+
+.photo-card2 {
+  background-image: url("src/assets/v26-stickers/photo-card2.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 35%;
+  height: 80vh;
+  position: absolute;
+  top: 1%;
+  left: 2%;
 }
