@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import loveSong from "../assets/v26/wave_to_earth_-_love._(Official_Lyric_Video)_128k.mp3";
 
 function LovePage() {
   const [lightsOn, setLightsOn] = useState(false);
@@ -35,6 +36,24 @@ function LovePage() {
       particle.style.animationDelay = Math.random() * 10 + "s";
       particlesContainer.appendChild(particle);
     }
+
+    // Play audio after 1.5s delay
+    const timeout = setTimeout(() => {
+      const audio = new Audio(loveSong);
+      audio.volume = 0.7;
+      audio.play();
+      // Store audio on window for cleanup
+      window._loveAudio = audio;
+    }, 1500);
+
+    return () => {
+      clearTimeout(timeout);
+      if (window._loveAudio) {
+        window._loveAudio.pause();
+        window._loveAudio.currentTime = 0;
+        window._loveAudio = null;
+      }
+    };
   }, []);
   return (
     <div className="love-page">
@@ -59,13 +78,12 @@ function LovePage() {
           <div className="inner-frame">
             <img
               className="red-grid-corner"
-              src="src\assets\v26-stickers\red-grid-corner.png"
+              src="src\assets\v26-stickers\flower-corner.png"
             ></img>
             <img
               className="love-corner"
               src="src\assets\v26-stickers\love-corner.png"
             ></img>
-            <div className="love-letter"></div>
             <img
               className="monkey"
               src="src\assets\v26-stickers\monke-flw.png"
@@ -74,10 +92,27 @@ function LovePage() {
               className="snoopy-flw"
               src="src\assets\v26-stickers\snoopy-flw.png"
             ></img>
-            <div className="photo-card2"></div>
-            <div className="photo-card"></div>
+            <img
+              className="couple"
+              src="src\assets\v26-stickers\newspaper-kiss-draw.png"
+            ></img>
+            <img
+              className="red-ribbon"
+              src="src\assets\v26-stickers\red-ribbon.png"
+            ></img>
+            <img
+              className="bouquet"
+              src="src\assets\v26-stickers\bouquet.png"
+            ></img>
+            <div className="love-letter"></div>
+            <div className="photo-card2">
+              <img className="img1" src="src\assets\3-photo\card1img.jpg"></img>
+            </div>
+            <div className="photo-card">
+              <img className="img2" src="src\assets\3-photo\card2img.jpg"></img>
+            </div>
             <div className="photo-heart">
-              <img className="img1"></img>
+              
             </div>
           </div>
         </div>
