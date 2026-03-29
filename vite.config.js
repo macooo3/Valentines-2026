@@ -9,5 +9,5 @@ export default defineConfig({
       },
     }),
   ],
-  base: "/Valentines-2026",
+  base: "/Valentines-2026/",
 });
