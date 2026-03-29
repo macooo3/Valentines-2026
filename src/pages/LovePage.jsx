@@ -1,5 +1,12 @@
 import { useEffect, useState } from "react";
 import loveSong from "../assets/v26/wave_to_earth_-_love._(Official_Lyric_Video)_128k.mp3";
+import bouquet from "../assets/v26-stickers/bouquet.png";
+import flowerCorner from "../assets/v26-stickers/flower-corner.png";
+import loveCorner from "../assets/v26-stickers/love-corner.png";
+import monkey from "../assets/v26-stickers/monke-flw.png";
+import snoopyFlw from "../assets/v26-stickers/snoopy-flw.png";
+import couple from "../assets/v26-stickers/newspaper-kiss-draw.png";
+import redRibbon from "../assets/v26-stickers/red-ribbon.png";
 
 function LovePage() {
   const [lightsOn, setLightsOn] = useState(false);
@@ -76,34 +83,13 @@ function LovePage() {
         <h1 className="happy">Happy Valentine's Day! ❤️</h1>
         <div className="outer-frame">
           <div className="inner-frame">
-            <img
-              className="flower-corner"
-              src="src/assets/v26-stickers/flower-corner.png"
-            ></img>
-            <img
-              className="love-corner"
-              src="src/assets/v26-stickers/love-corner.png"
-            ></img>
-            <img
-              className="monkey"
-              src="src/assets/v26-stickers/monke-flw.png"
-            ></img>
-            <img
-              className="snoopy-flw"
-              src="src/assets/v26-stickers/snoopy-flw.png"
-            ></img>
-            <img
-              className="couple"
-              src="src/assets/v26-stickers/newspaper-kiss-draw.png"
-            ></img>
-            <img
-              className="red-ribbon"
-              src="src/assets/v26-stickers/red-ribbon.png"
-            ></img>
-            <img
-              className="bouquet"
-              src="src\assets\v26-stickers\bouquet.png"
-            ></img>
+            <img className="flower-corner" src={flowerCorner}></img>
+            <img className="love-corner" src={loveCorner}></img>
+            <img className="monkey" src={monkey}></img>
+            <img className="snoopy-flw" src={snoopyFlw}></img>
+            <img className="couple" src={couple}></img>
+            <img className="red-ribbon" src={redRibbon}></img>
+            <img className="bouquet" src={bouquet}></img>
             <div className="love-letter"></div>
             <div className="photo-card"></div>
             <div className="photo-card2"></div>
