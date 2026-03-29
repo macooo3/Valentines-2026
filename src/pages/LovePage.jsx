@@ -105,15 +105,9 @@ function LovePage() {
               src="src\assets\v26-stickers\bouquet.png"
             ></img>
             <div className="love-letter"></div>
-            <div className="photo-card2">
-              <img className="img1" src="src\assets\3-photo\card1img.jpg"></img>
-            </div>
-            <div className="photo-card">
-              <img className="img2" src="src\assets\3-photo\card2img.jpg"></img>
-            </div>
-            <div className="photo-heart">
-              
-            </div>
+            <div className="photo-card"></div>
+            <div className="photo-card2"></div>
+            <div className="photo-heart"></div>
           </div>
         </div>
       </div>

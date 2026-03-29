@@ -378,7 +378,7 @@ body,
   background-size: contain;
   width: 15%;
   height: 15%;
-  top: 10%;
+  top: 7%;
   right: 40%;
   position: absolute;
 }
@@ -408,26 +408,24 @@ body,
   background-size: contain;
   width: 20%;
   height: 20%;
-  top: 35%;
-  left: 10%;
+  top: 40%;
+  left: 6%;
   position: absolute;
 }
-.photo-heart {
-  background-image: url("src/assets/3-photo/Screenshot 2026-02-14 221447.png");
+
+.photo-card {
+  background-image: url("src/assets/3-photo/card1img.png");
   background-repeat: no-repeat;
   background-size: contain;
   width: 35%;
   height: 80vh;
   position: absolute;
-  top: 55%;
-  right: 3%;
-  display: flex;
-  justify-content: center;  
-  align-items: center;
+  top: 1%;
+  left: 2%;
 }
 
-.photo-card {
-  background-image: url("src/assets/v26-stickers/photo-card.png");
+.photo-card2 {
+  background-image: url("src/assets/3-photo/card2img.png");
   background-repeat: no-repeat;
   background-size: contain;
   width: 35%;
@@ -437,16 +435,20 @@ body,
   left: 30%;
 }
 
-.photo-card2 {
-  background-image: url("src/assets/v26-stickers/photo-card2.png");
+.photo-heart {
+  background-image: url("src/assets/3-photo/card3img.png");
   background-repeat: no-repeat;
   background-size: contain;
   width: 35%;
   height: 80vh;
   position: absolute;
-  top: 1%;
-  left: 2%;
+  top: 55%;
+  right: 3%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
 .love-letter {
   background-image: url("src/assets/v26-stickers/love-letter.png");
   background-repeat: no-repeat;
@@ -457,25 +459,4 @@ body,
   top: 60%;
   left: 10%;
   position: absolute;
-  
-}
-
-.img1 {
-  width: 90%;
-  position: absolute;
-  top: 2%;
-  left: 5%;
-}
-
-.img2 {
-  width: 65%;
-  position: absolute;
-  top: 2%;
-  left: 15%;
-}
-.img3 {
-  width: 75%;
-  position: absolute;
-  top: 2%;
-  left: 15%;
 }
