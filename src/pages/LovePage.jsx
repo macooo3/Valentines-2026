@@ -77,28 +77,28 @@ function LovePage() {
         <div className="outer-frame">
           <div className="inner-frame">
             <img
-              className="red-grid-corner"
-              src="src\assets\v26-stickers\flower-corner.png"
+              className="flower-corner"
+              src="src/assets/v26-stickers/flower-corner.png"
             ></img>
             <img
               className="love-corner"
-              src="src\assets\v26-stickers\love-corner.png"
+              src="src/assets/v26-stickers/love-corner.png"
             ></img>
             <img
               className="monkey"
-              src="src\assets\v26-stickers\monke-flw.png"
+              src="src/assets/v26-stickers/monke-flw.png"
             ></img>
             <img
               className="snoopy-flw"
-              src="src\assets\v26-stickers\snoopy-flw.png"
+              src="src/assets/v26-stickers/snoopy-flw.png"
             ></img>
             <img
               className="couple"
-              src="src\assets\v26-stickers\newspaper-kiss-draw.png"
+              src="src/assets/v26-stickers/newspaper-kiss-draw.png"
             ></img>
             <img
               className="red-ribbon"
-              src="src\assets\v26-stickers\red-ribbon.png"
+              src="src/assets/v26-stickers/red-ribbon.png"
             ></img>
             <img
               className="bouquet"

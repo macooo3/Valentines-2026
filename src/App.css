@@ -329,6 +329,7 @@ body,
   opacity: 0.8;
 
   position: relative;
+  border: red solid 2px;
 }
 
 .happy {
@@ -342,7 +343,7 @@ body,
 /* Inside Frame */
 /* ===================== */
 
-.red-grid-corner {
+.flower-corner {
   background-size: contain;
   background-repeat: no-repeat;
   width: 40%;
@@ -368,9 +369,10 @@ body,
   background-size: contain;
   width: 20%;
   height: 20%;
-  top: 75%;
-  left: 35%;
   position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .snoopy-flw {
@@ -378,9 +380,10 @@ body,
   background-size: contain;
   width: 15%;
   height: 15%;
-  top: 7%;
-  right: 40%;
   position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .couple {
@@ -388,9 +391,10 @@ body,
   background-size: contain;
   width: 20%;
   height: 20%;
-  top: 30%;
-  right: 10%;
   position: absolute;
+  top: 50%;
+  right: 5%;
+  transform: translateY(-50%);
 }
 
 .red-ribbon {
@@ -414,7 +418,7 @@ body,
 }
 
 .photo-card {
-  background-image: url("src/assets/3-photo/card1img.png");
+  background-image: url("assets/3-photo/card1img.png");
   background-repeat: no-repeat;
   background-size: contain;
   width: 35%;
@@ -425,7 +429,7 @@ body,
 }
 
 .photo-card2 {
-  background-image: url("src/assets/3-photo/card2img.png");
+  background-image: url("assets/3-photo/card2img.png");
   background-repeat: no-repeat;
   background-size: contain;
   width: 35%;
@@ -436,7 +440,7 @@ body,
 }
 
 .photo-heart {
-  background-image: url("src/assets/3-photo/card3img.png");
+  background-image: url("assets/3-photo/card3img.png");
   background-repeat: no-repeat;
   background-size: contain;
   width: 35%;
@@ -450,7 +454,7 @@ body,
 }
 
 .love-letter {
-  background-image: url("src/assets/v26-stickers/love-letter.png");
+  background-image: url("assets/v26-stickers/love-letter.png");
   background-repeat: no-repeat;
   background-size: contain;
   width: 20%;
